@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.avihirsch.connect3.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/board"
+        android:id="@+id/board"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/red"
+        android:id="@+id/red1"
+        android:scaleType="fitCenter"
+        android:scaleX=".7"
+        android:scaleY=".7"
+        android:layout_marginTop="37dp"
+        android:layout_marginLeft="-15dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/yellow"
+        android:id="@+id/yellow1"
+        android:scaleType="fitCenter"
+        android:scaleX=".7"
+        android:scaleY=".7"
+        android:layout_marginTop="37dp"
+        android:layout_marginLeft="-15dp"
+        android:layout_marginStart="-15dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="col1" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/red"
+        android:id="@+id/red2"
+        android:scaleType="fitCenter"
+        android:scaleX=".7"
+        android:scaleY=".7"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_alignTop="@+id/red1"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/red"
+        android:id="@+id/red4"
+        android:scaleType="fitCenter"
+        android:scaleX=".7"
+        android:scaleY=".7"
+        android:layout_marginLeft="-15dp"
+        android:layout_marginStart="-15dp"
+        android:layout_centerVertical="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/red"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/red5"
+        android:scaleType="fitCenter"
+        android:scaleX=".7"
+        android:scaleY=".7" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/red"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/red6"
+        android:scaleType="fitCenter"
+        android:scaleX=".7"
+        android:scaleY=".7"
+        android:layout_marginRight="-20dp"
+        android:layout_marginEnd="-20dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/red"
+        android:id="@+id/red7"
+        android:scaleType="fitCenter"
+        android:scaleX=".7"
+        android:scaleY=".7"
+        android:layout_marginBottom="37dp"
+        android:layout_marginLeft="-15dp"
+        android:layout_marginStart="-15dp"
+        android:layout_alignParentBottom="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/red"
+        android:id="@+id/red8"
+        android:scaleType="fitCenter"
+        android:scaleX=".7"
+        android:scaleY=".7"
+        android:layout_alignTop="@+id/red7"
+        android:layout_alignLeft="@+id/red5"
+        android:layout_alignStart="@+id/red5" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/red"
+        android:id="@+id/red9"
+        android:scaleType="fitCenter"
+        android:scaleX=".7"
+        android:scaleY=".7"
+        android:layout_marginRight="-20dp"
+        android:layout_marginEnd="-20dp"
+        android:layout_alignTop="@+id/red7"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/yellow"
+        android:id="@+id/yellow2"
+        android:scaleType="fitCenter"
+        android:scaleX=".7"
+        android:scaleY=".7"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_alignTop="@+id/red1"
+        android:layout_centerHorizontal="true"
+        android:onClick="col2" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/yellow"
+        android:id="@+id/yellow4"
+        android:scaleType="fitCenter"
+        android:scaleX=".7"
+        android:scaleY=".7"
+        android:layout_marginLeft="-15dp"
+        android:layout_marginStart="-15dp"
+        android:layout_centerVertical="true"
+        android:onClick="col1" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/yellow"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/yellow5"
+        android:scaleType="fitCenter"
+        android:scaleX=".7"
+        android:scaleY=".7"
+        android:onClick="col2" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/yellow"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/yellow6"
+        android:scaleType="fitCenter"
+        android:scaleX=".7"
+        android:scaleY=".7"
+        android:layout_marginRight="-20dp"
+        android:layout_marginEnd="-20dp"
+        android:onClick="col3" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/yellow"
+        android:id="@+id/yellow7"
+        android:scaleType="fitCenter"
+        android:scaleX=".7"
+        android:scaleY=".7"
+        android:layout_marginBottom="37dp"
+        android:layout_marginLeft="-15dp"
+        android:layout_marginStart="-15dp"
+        android:layout_alignParentBottom="true"
+        android:onClick="col1" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/yellow"
+        android:id="@+id/yellow8"
+        android:scaleType="fitCenter"
+        android:scaleX=".7"
+        android:scaleY=".7"
+        android:layout_alignTop="@+id/red7"
+        android:layout_alignLeft="@+id/red5"
+        android:layout_alignStart="@+id/red5"
+        android:onClick="col2" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/yellow"
+        android:id="@+id/yellow9"
+        android:scaleType="fitCenter"
+        android:scaleX=".7"
+        android:scaleY=".7"
+        android:layout_marginRight="-20dp"
+        android:layout_marginEnd="-20dp"
+        android:layout_alignTop="@+id/red7"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="col3" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/yellow"
+        android:id="@+id/yellow3"
+        android:scaleType="fitCenter"
+        android:scaleX=".7"
+        android:scaleY=".7"
+        android:layout_marginRight="-20dp"
+        android:layout_marginEnd="-20dp"
+        android:layout_alignTop="@+id/red2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="col3" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/red"
+        android:id="@+id/red3"
+        android:scaleType="fitCenter"
+        android:scaleX=".7"
+        android:scaleY=".7"
+        android:layout_marginRight="-20dp"
+        android:layout_marginEnd="-20dp"
+        android:layout_alignTop="@+id/red2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="col3" />
+
+    <Button
+        android:text="Button"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/button2"
+        android:alpha="0"
+        android:minHeight="0dp"
+        android:minWidth="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/button3"
+        android:layout_toLeftOf="@+id/button3"
+        android:onClick="col1" />
+
+    <Button
+        android:text="Button"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/button4"
+        android:alpha="0"
+        android:minWidth="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/button3"
+        android:layout_toEndOf="@+id/button3"
+        android:onClick="col3" />
+
+    <Button
+        android:text="Button"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/button3"
+        android:alpha="0"
+        android:minWidth="115dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="col2" />
+
+</RelativeLayout>
